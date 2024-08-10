@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    @apply font-body;
+  }
+}
+
+/* src/styles/slider.css */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: background-color 0.3s;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: darkred;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 25px;
+  color: white;
+  opacity: 10;
+}
+/* STYLE NAVBAR */
+.navbar .nav .active {
+  /* background-color: blue; */
+  color: red;
+}
+.toggleNav .active {
+  color: red;
+}
+.navbar .nav .active:hover {
+  color: white;
+}
+.navbar .color-active {
+  background-color: white;
+  border-bottom: 2px solid, red;
+}
+/* END STYLE NAVBAR */
