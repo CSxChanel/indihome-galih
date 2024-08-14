@@ -20,7 +20,7 @@ function Layout ({ children, pageTitle }: LayoutProps) {
                 <meta name="description" content="Home Page" />
             </Head>
             <Navbar/>
-            <main className="mb-20">{children}</main>
+            <main className="min-h-screen">{children}</main>
             <Foother />
         </>
     );
